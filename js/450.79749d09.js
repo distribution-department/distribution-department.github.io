@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunksales_tnp_vue"]=self["webpackChunksales_tnp_vue"]||[]).push([[450],{88450:function(n,e,t){t.r(e),t.d(e,{default:function(){return l}});var u=t(56768);function a(n,e,t,a,r,s){return(0,u.uX)(),(0,u.CE)("h1",null,"AnaliticComponent")}var r={name:"AnaliticComponent"},s=t(71241);const c=(0,s.A)(r,[["render",a]]);var l=c}}]);
+//# sourceMappingURL=450.79749d09.js.map

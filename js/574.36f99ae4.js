@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunksales_tnp_vue"]=self["webpackChunksales_tnp_vue"]||[]).push([[574],{36574:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var s=n(56768);function a(e,t,n,a,o,u){const r=(0,s.g2)("v-empty-state");return(0,s.uX)(),(0,s.Wv)(r,{headline:"Whoops, 404",image:"https://vuetifyjs.b-cdn.net/docs/images/logos/v.png"})}var o={name:"LibraryComponent",mounted(){localStorage.setItem("checkLoadStatus","loaded")}},u=n(71241);const r=(0,u.A)(o,[["render",a]]);var c=r}}]);
-//# sourceMappingURL=574.36f99ae4.js.map

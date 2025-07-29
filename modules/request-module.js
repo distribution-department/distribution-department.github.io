@@ -204,8 +204,6 @@ export class RequestModule {
         this.storage.dataOf2024 = [...resultArrayData.filter(year => year.year == 2024)];
         this.storage.dataOf2025 = [...resultArrayData.filter(year => year.year == 2025)];
 
-        console.log(this.storage.fullData)
-
         this.onSuccess();
         console.log('Загрузка завершена!');
     }

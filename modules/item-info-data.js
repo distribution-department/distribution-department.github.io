@@ -130,7 +130,7 @@ export class ItemInfoData {
         const monthlySales23 = this.monthes.map(month => {
             const monthData = this.fullSales2023.filter(item => item.month === month);
             if (monthData.length > 0) {
-                const total = monthData.reduce((sum, item) => sum + (item.saleMoney || 0), 0);
+                const total = monthData.reduce((sum, item) => sum + (item.saleCount || 0), 0);
                 return Math.round(total);
             } else {
                 return null;
@@ -139,7 +139,7 @@ export class ItemInfoData {
         const monthlySales24 = this.monthes.map(month => {
             const monthData = this.fullSales2024.filter(item => item.month === month);
             if (monthData.length > 0) {
-                const total = monthData.reduce((sum, item) => sum + (item.saleMoney || 0), 0);
+                const total = monthData.reduce((sum, item) => sum + (item.saleCount || 0), 0);
                 return Math.round(total);
             } else {
                 return null;
@@ -148,7 +148,7 @@ export class ItemInfoData {
         const monthlySales25 = this.monthes.map(month => {
             const monthData = this.fullSales2025.filter(item => item.month === month);
             if (monthData.length > 0) {
-                const total = monthData.reduce((sum, item) => sum + (item.saleMoney || 0), 0);
+                const total = monthData.reduce((sum, item) => sum + (item.saleCount || 0), 0);
                 return Math.round(total);
             } else {
                 return null;
@@ -160,7 +160,7 @@ export class ItemInfoData {
     createItemChart(sales23, sales24, sales25) {
         this.chartSelector.style.display = 'block';
 
-        let title = `Динамика продаж`;
+        let title = `Динамика продаж в штуках`;
         const labels = this.monthes;
 
         const data = {

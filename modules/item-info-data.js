@@ -9,13 +9,13 @@ export class ItemInfoData {
         this.itemArticle = document.querySelector('.item__article');
         this.itemGrope = document.querySelector('.item__grope');
 
-        this.itemSales2023uah = document.querySelector('.item__2023-sales-uah');
-        this.itemSales2024uah = document.querySelector('.item__2024-sales-uah');
-        this.itemSales2025uah = document.querySelector('.item__2025-sales-uah');
+        this.itemSales2023uah = document.querySelector('.sales-money-23');
+        this.itemSales2024uah = document.querySelector('.sales-money-24');
+        this.itemSales2025uah = document.querySelector('.sales-money-25');
 
-        this.itemSales2023count = document.querySelector('.item__2023-sales-count');
-        this.itemSales2024count = document.querySelector('.item__2024-sales-count');
-        this.itemSales2025count = document.querySelector('.item__2025-sales-count');
+        this.itemSales2023count = document.querySelector('.sales-count-23');
+        this.itemSales2024count = document.querySelector('.sales-count-24');
+        this.itemSales2025count = document.querySelector('.sales-count-25');
 
         this.monthes = [
             'январь', 'февраль', 'март', 'апрель', 'май', 'июнь',
@@ -48,18 +48,20 @@ export class ItemInfoData {
         this.closeData();
 
         this.serchItemBtn.addEventListener('click', () => {
-            let searchElement = this.serchItemData.value.trim();
-            if (searchElement === '') return;
-            this.getDataForTitle(searchElement);
+            getData();
         });
-
         document.addEventListener('keydown', (event) => {
             if (event.code === 'Enter' || event.code === 'NumpadEnter') {
-                let searchElement = this.serchItemData.value.trim();
-                if (searchElement === '') return;
-                this.getDataForTitle(searchElement);
+                getData();
             }
         });
+
+        let getData = () => {
+            let searchElement = this.serchItemData.value.trim();
+
+            if (searchElement === '') return;
+            this.getDataForTitle(searchElement);
+        }
     }
 
     closeData() {

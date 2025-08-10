@@ -78,8 +78,10 @@
 
             </div>
         </div>
+
         <div class="item-info">
             <div class="item-info__title">Информация в разрезе товара</div>
+
             <div class="item-info__selection">
                 <div class="input-field col s6">
                     <input id="item_name" type="text" class="validate">
@@ -87,6 +89,7 @@
                 </div>
                 <a class="waves-effect waves-light btn search-item">Искать</a>
             </div>
+
             <div class="item-info__visual">
                 <div class="item">
                     <div class="info-data">
@@ -101,36 +104,42 @@
                         <div class="info">Категория</div>
                         <div class="item__grope data"></div>
                     </div>
-                    <div class="info-data info-data-2023">
-                        <div class="info">Продажи за 2023 (грн)</div>
-                        <div class="item__2023-sales-uah data"></div>
-                    </div>
-                    <div class="info-data info-data-2023">
-                        <div class="info">Продажи за 2023 (шт)</div>
-                        <div class="item__2023-sales-count data"></div>
-                    </div>
-                    <div class="info-data info-data-2024">
-                        <div class="info">Продажи за 2024 (грн)</div>
-                        <div class="item__2024-sales-uah data"></div>
-                    </div>
-                    <div class="info-data info-data-2024">
-                        <div class="info">Продажи за 2024 (шт)</div>
-                        <div class="item__2024-sales-count data"></div>
-                    </div>
-                    <div class="info-data info-data-2025">
-                        <div class="info">Продажи за 2025 (грн)</div>
-                        <div class="item__2025-sales-uah data"></div>
-                    </div>
-                    <div class="info-data info-data-2025">
-                        <div class="info">Продажи за 2025 (шт)</div>
-                        <div class="item__2025-sales-count data"></div>
-                    </div>
+
+                    <table>
+                        <caption>Данные продаж по годам</caption>
+                        <thead>
+                        <tr>
+                            <th colspan="2">2023</th>
+                            <th colspan="2">2024</th>
+                            <th colspan="2">2025</th>
+                        </tr>
+                        <tr>
+                            <th>шт</th>
+                            <th>грн</th>
+                            <th>шт</th>
+                            <th>грн</th>
+                            <th>шт</th>
+                            <th>грн</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="sales-count-23">10</td>
+                            <td class="sales-money-23">9 999 999</td>
+                            <td class="sales-count-24">9</td>
+                            <td class="sales-money-24">9 999 999</td>
+                            <td class="sales-count-25">7</td>
+                            <td class="sales-money-25">9 999 999</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="item-info__chart">
                 <canvas id="itemChart"></canvas>
             </div>
         </div>
+
     </div>
 
     <div class="preloader">
@@ -175,6 +184,7 @@
                 <div class="load sales2025_4">Апрель</div>
                 <div class="load sales2025_5">Май</div>
                 <div class="load sales2025_6">Июнь</div>
+                <div class="load sales2025_7">Июль</div>
             </div>
 
         </div>

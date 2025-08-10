@@ -33,9 +33,31 @@ export class RequestModule {
         this.init();
     }
 
-    init(){
+    init() {
+        //this.getAllDataTest();
         this.getAllData()
-    }
+    };
+
+    /*async getAllDataTest() {
+        console.log('Загрузка инициирована ...');
+
+        let resultArrayData = [];
+
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbyWFJmr4fhlmTRArN0x4elW6Nl5A0MZwRZdiGeKCgFoqxXqYbdZjvMYmOUJiev0KUOq/exec');
+            resultArrayData = await response.json();
+        } catch (error) {
+            console.warn(`⚠️ Ошибка при загрузке!`, error.message);
+        }
+
+        this.storage.fullData = [...resultArrayData.sales2025_1];
+        this.storage.dataOf2023 = [...resultArrayData.sales2025_1.filter(year => year.year == 2023)];
+        this.storage.dataOf2024 = [...resultArrayData.sales2025_1.filter(year => year.year == 2024)];
+        this.storage.dataOf2025 = [...resultArrayData.sales2025_1.filter(year => year.year == 2025)];
+
+        this.onSuccess();
+        console.log('Загрузка завершена!');
+    };*/
 
     async getAllData() {
         console.log('Загрузка инициирована ...');
@@ -173,6 +195,11 @@ export class RequestModule {
                 url: 'https://script.google.com/macros/s/AKfycbyg9diEyRZiOnifnR3NsIppXJNMYPfZE0cK1ewahNzgtLG4jpzW2Myycv5-DeUQs3cbeg/exec',
                 year: '2025',
                 key: 'sales2025_6'
+            },
+            {
+                url: 'https://script.google.com/macros/s/AKfycby3Zy_nkTl7uSE_8HCP9LsSFWG__7ZL0REgfjuJ9k-BWKo_fmxxaqNRqZi_61Jqy0jUfA/exec',
+                year: '2025',
+                key: 'sales2025_7'
             }
         ];
 
@@ -310,3 +337,5 @@ export class RequestModule {
             this.sumsByCategoryMounthly)
     }
 }
+
+// 26-238-040, 25-45-229

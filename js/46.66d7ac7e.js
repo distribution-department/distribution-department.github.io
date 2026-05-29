@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkkiber_dashboard"]=self["webpackChunkkiber_dashboard"]||[]).push([[46],{3046:function(a,n,e){e.r(n),e.d(n,{default:function(){return i}});var r=e(6768);function t(a,n,e,t,s,u){const d=(0,r.g2)("ManagerPage");return(0,r.uX)(),(0,r.Wv)(d,{"manager-id":"stadnik"})}var s=e(4964),u={name:"StadnikPage",components:{ManagerPage:s.A}},d=e(1241);const c=(0,d.A)(u,[["render",t]]);var i=c}}]);
+//# sourceMappingURL=46.66d7ac7e.js.map
